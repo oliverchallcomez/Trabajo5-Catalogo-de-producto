@@ -1,0 +1,208 @@
+/* ----- -----  Estilos de general del catalogo ----- ----- */
+*{
+    margin: 0;
+    padding:0;
+    font-family: 'Open Sans';
+}
+body{
+    background-color: rgb(221, 231, 239);
+    
+}
+.general{
+    width: 1300px;
+    height: 1705px;
+    background-color:  rgb(7, 52, 230);
+    margin: auto;
+    
+}
+
+
+
+/* ----- -----  Estilos titulo del catalogo ----- ----- */
+#cabev{
+    background-color: rgb(165, 14, 14) ;
+    background-size: cover;
+    background-position:center;
+    height: 300px;
+    width: 1270px;
+    margin: 0px 0px 0px 15px;
+}
+
+#cabev h1{
+    text-align: center;
+    font-size: 70px;
+    /* background-color: #000; */
+    color: #fff;
+    padding: 30px 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#numb{
+    text-align: center;
+    font-size: 70px;
+    /* background-color: #000; */
+    color: #fff;
+    padding: 30px 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+}
+
+
+/* ----- -----  Estilos del cuerpo del catalogo ----- ----- */
+#cuerpo{
+    background-color: rgb(0, 162, 255);
+    width: 1270px;
+    margin: 0px 0px 0px 15px;
+}
+
+.contenedor{
+    max-width: 1000px;
+    padding: 10px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    /* oculto lo que queda fuera del .contenedor */
+    contain: paint;
+}
+
+
+/* ----- -----  Estilos del contenedor de elementos del catalogo ----- ----- */
+.contenedor .contenedor-items{
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    grid-gap:10px;
+    grid-row-gap: 15px;
+    /* width: 60%; */
+    width: 100%;
+    transition: .3s;
+}
+
+
+/* ----- -----  Estilos de carritos ----- ----- */
+.contenedor .contenedor-items .item{
+    max-width: 200px;
+    margin: auto;
+    border: 1px solid #b40202;
+    border-radius: 10px;
+    padding: 20px;
+    transition: .3s;
+    box-shadow: 3px 3px 5px #000;
+}
+.contenedor .contenedor-items .item .img-item{
+    width: 100%;
+    border-radius:15px ;
+}
+.contenedor .contenedor-items .item:hover{
+    box-shadow: 0 0 10px #666;
+    scale: 1.05;
+}
+.contenedor .contenedor-items .item .titulo-item{
+    display: block;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+}
+.contenedor .contenedor-items .item .precio-item{
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    font-size: 22px;
+}
+.contenedor .contenedor-items .item .boton-item{
+    display: block;
+    margin: 10px auto;
+    border: none;
+    background-color: black;
+    color: #fff;
+    padding: 5px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#desc{
+    background-color: #b40202;
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    font-size: 22px;
+    color: white;
+    width: 60px;
+    margin: 0px 0px 0px 70px;
+    border-radius: 5px;
+}
+
+
+/* ----- -----  Estilos del contenedor de pie de pagina del catalogo ----- ----- */
+footer{
+    background-color: #b40202;
+    width: 1270px;
+    height: 130px;
+    margin: 15px 0px 0px 15px;
+}
+#piedepagina{
+    width: 1270px;
+    height: 130px;
+    background-image: url(../img/img1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+/* ----- -----  Estilos del crupo copy y derechos del catalogo ----- ----- */
+#copi{
+    text-align: center;
+
+}
+
+.copy{
+    color: white;
+    margin: 100px 0px 0px 0px;
+    font-size: 20px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+/* ----- -----  Estilos del grupo de registrarse del catalogo ----- ----- */
+.boton{
+    text-align: center;
+}
+
+.btn{
+    color: white;
+    background-color: rgb(17, 0, 255);
+    font-size: 20px;
+    width: 100px;
+    height: 35px;
+    border: 10px;
+    border-radius: 7px;
+}
+
+
+/* ----- -----  Estilos contenedor de icono flotante de whatsapp del catalogo ----- ----- */
+
+#btn-wsp{
+    position:fixed;
+    width:60px;
+    height:60px;
+    line-height: 63px;
+    bottom:25px;
+    right:25px;
+    color:#FFF;
+    border-radius:50px;
+    text-align:center;
+    font-size:35px;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.3);
+    z-index:100;
+    transition: all 300ms ease;
+}
+.btn-wsp:hover{
+    background: rgb(240, 247, 243);
+}
+@media only screen and (min-width:320px) and (max-width:768px){
+    .btn-wsp{
+        width:63px;
+        height:63px;
+        line-height: 66px;
+	}
+}
